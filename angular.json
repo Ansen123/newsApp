@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NewsApp": {
+    "newsapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/news-app",
+            "outputPath": "dist/newsapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "NewsApp:build:production"
+              "browserTarget": "newsapp:build:production"
             },
             "development": {
-              "browserTarget": "NewsApp:build:development"
+              "browserTarget": "newsapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NewsApp:build"
+            "browserTarget": "newsapp:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "8b1c193b-7b05-4067-8be0-5503c6e85112"
+    "analytics": "827e1d5a-17ce-45f5-824c-2f93f670b957"
   }
 }
